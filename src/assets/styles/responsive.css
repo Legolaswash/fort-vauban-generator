@@ -1,0 +1,72 @@
+@import 'variables.css';
+
+/* Version tablette et desktop */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .fort-display {
+    flex: 2;
+  }
+
+  .controls-panel {
+    flex: 1;
+  }
+
+  .controls-btn {
+    display: none;
+  }
+}
+
+/* Version mobile */
+@media (max-width: 767px) {
+  .app-title {
+    font-size: 2rem;
+  }
+
+  .app-subtitle {
+    font-size: 1rem;
+  }
+
+  .controls-panel {
+    max-width: 100%;
+    display: none;
+  }
+
+  .controls-btn {
+    display: flex;
+  }
+
+  .controls-panel.show {
+    display: block;
+  }
+
+  .presets-container {
+    grid-template-columns: 1fr;
+  }
+
+  .inline-controls {
+    flex-direction: column;
+  }
+}
+
+/* Petits mobiles */
+@media (max-width: 480px) {
+  .app-title {
+    font-size: 1.5rem;
+  }
+
+  .app-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .fort-display {
+    min-height: 300px;
+    padding: 12px;
+  }
+
+  .controls-group-title {
+    font-size: 1rem;
+  }
+}

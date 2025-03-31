@@ -1,0 +1,36 @@
+/* ----- ORGANIC ----- */
+.app-container.organic {
+  --bg-color: #f0f4e8;
+  --shadow-dark: rgba(0, 0, 0, 0.1);
+  --shadow-light: rgba(255, 255, 255, 0.5);
+  --text-color: #395144;
+  --primary-color: #4e6c50;
+  --secondary-color: #aa8b56;
+  --tertiary-color: #f0ead2;
+}
+
+body:has(.app-container.organic) {
+  background: #f0f4e8;
+}
+
+.app-container.organic .fort-display,
+.app-container.organic .controls-panel {
+  background: #f0f4e8;
+  border-radius: 40px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.app-container.organic .app-title {
+  color: #395144;
+  font-family: 'Georgia', serif;
+  font-weight: normal;
+}
+
+/* .app-container.organic button {
+  border-radius: 25px;
+  background: #f0ead2;
+  color: #395144;
+  border: none;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.1);
+} */

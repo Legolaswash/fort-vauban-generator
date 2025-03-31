@@ -32,3 +32,4 @@ Thumbs.db
 # SparkBenchmark (Almost Done)
 NotReady/
 build/
+node_modules/

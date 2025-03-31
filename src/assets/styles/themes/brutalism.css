@@ -1,0 +1,130 @@
+/* ----- BRUTALISM ----- */
+.app-container.brutalism {
+    --bg-color: #f5f5f5;
+    --shadow-dark: #000000;
+    --shadow-light: #000000;
+    --text-color: #000000;
+    --primary-color: #ff3e3e;
+    --secondary-color: #4040ff;
+    --tertiary-color: #30d158;
+    text-align: center;
+}
+
+body:has(.app-container.brutalism) {
+    background: #f5f5f5;
+}
+
+.app-container.brutalism .fort-display,
+.app-container.brutalism .controls-panel {
+    border: 4px solid black;
+    border-radius: 0;
+    box-shadow: 12px 12px 0px #000000 !important;
+    background: white;
+    position: relative;
+    transform: translate(-3px, -3px);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.app-container.brutalism .app-title {
+    font-family: monospace;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    color: #000;
+    background: #ff3e3e;
+    padding: 5px 15px;
+    box-shadow: 6px 6px 0px #000000;
+}
+
+.app-container.brutalism .controls-group-title {
+    background: #000;
+    color: #fff;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-family: monospace;
+    margin-bottom: 15px;
+    border-bottom: none;
+}
+
+.app-container.brutalism button,
+.app-container.brutalism .design-style-select,
+.app-container.brutalism .rotation-input,
+.app-container.brutalism .dimension-input,
+.app-container.brutalism .number-input {
+    border: 2px solid black;
+    background: white;
+    font-family: monospace;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+.app-container.brutalism button {
+    background: white;
+    border: 3px solid black;
+    box-shadow: 4px 4px 0px #000000;
+    color: #000;
+    text-transform: uppercase;
+    font-family: monospace;
+    letter-spacing: -0.5px;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.app-container.brutalism button:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #000000;
+}
+
+.app-container.brutalism button:active {
+    transform: translate(0px, 0px);
+    box-shadow: 0px 0px 0px #000000;
+}
+
+.app-container.brutalism .control-item label {
+    font-family: monospace;
+    background-color: black;
+    color: white;
+    padding: 2px 6px;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.app-container.brutalism .toggle-container {
+    margin-top: 12px;
+}
+
+.app-container.brutalism .toggle-container span {
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: black;
+}
+
+.app-container.brutalism .toggle {
+    width: 60px;
+    height: 26px;
+}
+
+.app-container.brutalism .toggle-slider {
+    border-radius: 0;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: none;
+}
+
+.app-container.brutalism .toggle-slider:before {
+    border-radius: 0;
+    height: 18px;
+    width: 22px;
+    border: 2px solid black;
+    background-color: #ff3e3e;
+    box-shadow: none;
+}
+
+.app-container.brutalism input:checked+.toggle-slider:before {
+    background-color: #30d158;
+}

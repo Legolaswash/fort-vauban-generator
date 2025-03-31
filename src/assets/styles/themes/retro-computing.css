@@ -1,0 +1,111 @@
+/* ----- RETRO-COMPUTING ----- */
+.app-container.retro-computing {
+  --bg-color: #000084;
+  --shadow-dark: #000064;
+  --shadow-light: #0000a4;
+  --text-color: #ffffff;
+  --primary-color: #00aaaa;
+  --secondary-color: #aa00aa;
+  --tertiary-color: #aa5500;
+  font-family: 'VT323', 'Courier New', monospace;
+}
+
+body:has(.app-container.retro-computing) {
+  background: #000084;
+}
+
+.app-container.retro-computing .fort-display,
+.app-container.retro-computing .controls-panel {
+  background: #000084;
+  border: 3px double #ffffff;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 20px;
+}
+
+.app-container.retro-computing .app-title {
+  color: #ffffff;
+  text-shadow: none;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.app-container.retro-computing .app-subtitle {
+  color: #55ffff;
+}
+
+.app-container.retro-computing .controls-group-title {
+  background: #aa00aa;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 5px;
+  border-bottom: none;
+  text-align: center;
+}
+
+.app-container.retro-computing .control-item label {
+  color: #ffff55;
+  text-transform: uppercase;
+}
+
+.app-container.retro-computing button {
+  background: #000084;
+  color: #ffffff;
+  border: 2px outset #888888;
+  border-radius: 0;
+  font-family: 'VT323', 'Courier New', monospace;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  box-shadow:
+    2px 2px 0 #000000,
+    inset 1px 1px 0 #ffffff,
+    inset -1px -1px 0 #555555;
+  transition: all 0.05s;
+}
+
+.app-container.retro-computing button:hover {
+  background: #0000aa;
+}
+
+.app-container.retro-computing button:active {
+  border: 2px inset #888888;
+  box-shadow:
+    1px 1px 0 #000000,
+    inset 1px 1px 0 #555555,
+    inset -1px -1px 0 #ffffff;
+  padding: 6px 9px 4px 11px;
+}
+
+.app-container.retro-computing .slider,
+.app-container.retro-computing .value-display,
+.app-container.retro-computing .number-input,
+.app-container.retro-computing .rotation-input,
+.app-container.retro-computing .dimension-input {
+  background: #000084;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  box-shadow: none;
+  font-family: 'VT323', 'Courier New', monospace;
+  border-radius: 0;
+}
+
+.app-container.retro-computing .toggle-container span {
+  color: #ffff55;
+  text-transform: uppercase;
+  font-family: 'VT323', 'Courier New', monospace;
+}
+
+.app-container.retro-computing .toggle-slider {
+  background-color: #000084;
+  border: 2px outset #888888;
+  box-shadow:
+    inset 1px 1px 0 #555555,
+    inset -1px -1px 0 #ffffff;
+}
+
+.app-container.retro-computing input:checked+.toggle-slider {
+  background-color: #aa00aa;
+  border: 2px outset #888888;
+}

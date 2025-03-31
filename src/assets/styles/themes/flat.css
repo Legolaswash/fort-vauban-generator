@@ -1,0 +1,10 @@
+/* ----- FLAT ----- */
+.app-container.flat {
+  --bg-color: #ffffff;
+  --shadow-dark: rgba(0, 0, 0, 0);
+  --shadow-light: rgba(0, 0, 0, 0);
+  --text-color: #333333;
+  --primary-color: #3498db;
+  --secondary-color: #e74c3c;
+  --tertiary-color: #2ecc71;
+}

@@ -1,0 +1,10 @@
+/* ----- NEUMORPHISM ----- */
+.app-container.neumorphism {
+  --bg-color: #e0e5ec;
+  --shadow-dark: #a3b1c6;
+  --shadow-light: #ffffff;
+  --text-color: #4a5568;
+  --primary-color: #6c5ce7;
+  --secondary-color: #fd79a8;
+  --tertiary-color: #00cec9;
+}

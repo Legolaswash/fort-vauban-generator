@@ -1,0 +1,87 @@
+@import 'variables.css';
+
+/* Styles généraux des formulaires */
+label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* Champs de texte et nombres */
+.number-input,
+.rotation-input,
+.dimension-input {
+  text-align: center;
+  border: none;
+  background: var(--bg-color);
+  box-shadow: inset 2px 2px 5px var(--shadow-dark),
+    inset -2px -2px 5px var(--shadow-light);
+  color: var(--text-color);
+  font-weight: 600;
+  outline: none;
+  transition: var(--transition-fast);
+}
+
+.number-input:focus,
+.rotation-input:focus,
+.dimension-input:focus {
+  box-shadow: inset 3px 3px 6px var(--shadow-dark),
+    inset -3px -3px 6px var(--shadow-light);
+}
+
+.number-input {
+  width: 60px;
+  height: 40px;
+  border-radius: var(--border-radius-md);
+  text-align: center;
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 600;
+  outline: none;
+}
+
+.rotation-input {
+  width: 60px;
+  height: 40px;
+  border-radius: var(--border-radius-md);
+  font-size: 1rem;
+}
+
+.dimension-input {
+  width: 70px;
+  height: 30px;
+  border-radius: var(--border-radius-md);
+  font-size: 0.9rem;
+}
+
+/* Sélecteurs */
+.design-style-select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: var(--border-radius-md);
+  background: var(--bg-color);
+  box-shadow: inset 2px 2px 5px var(--shadow-dark),
+    inset -2px -2px 5px var(--shadow-light);
+  border: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  cursor: pointer;
+  transition: var(--transition-normal);
+}
+
+.design-style-select:focus {
+  outline: none;
+  box-shadow: inset 3px 3px 6px var(--shadow-dark),
+    inset -3px -3px 6px var(--shadow-light);
+}
+
+.design-style-select option {
+  padding: 8px;
+}

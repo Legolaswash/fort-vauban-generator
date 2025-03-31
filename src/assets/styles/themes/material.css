@@ -1,0 +1,10 @@
+/* ----- MATERIAL ----- */
+.app-container.material {
+  --bg-color: #fafafa;
+  --shadow-dark: rgba(0, 0, 0, 0.2);
+  --shadow-light: rgba(255, 255, 255, 0);
+  --text-color: #333333;
+  --primary-color: #2196f3;
+  --secondary-color: #e91e63;
+  --tertiary-color: #4caf50;
+}

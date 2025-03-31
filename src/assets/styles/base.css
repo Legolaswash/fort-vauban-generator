@@ -1,0 +1,149 @@
+@import 'variables.css';
+
+/* Styles de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 20px;
+  transition: background 0.5s ease;
+}
+
+/* Structure principale */
+.app-container {
+  width: 100%;
+  max-width: 1200px;
+  transition: all 0.3s ease;
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 3px var(--shadow-dark);
+}
+
+.app-subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.fort-display {
+  flex: 1;
+  border-radius: var(--border-radius-lg);
+  background: var(--bg-color);
+  box-shadow: 8px 8px 16px var(--shadow-dark),
+    -8px -8px 16px var(--shadow-light);
+  padding: var(--spacing-lg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 550px;
+}
+
+.controls-panel {
+  width: 100%;
+  /* max-width: 350px; */
+  border-radius: var(--border-radius-lg);
+  background: var(--bg-color);
+  box-shadow: 8px 8px 16px var(--shadow-dark),
+    -8px -8px 16px var(--shadow-light);
+  padding: var(--spacing-lg);
+}
+
+.controls-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.controls-group-title {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  font-size: 1.2rem;
+  border-bottom: 2px solid rgba(108, 92, 231, 0.2);
+  padding-bottom: var(--spacing-sm);
+}
+
+.control-item {
+  margin-bottom: var(--spacing-md);
+}
+
+/* Animation pour les éléments SVG */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+svg path {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Éléments spécifiques */
+.svg-container {
+  position: relative;
+  transition: all 0.3s ease;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible; /* Permet aux éléments de déborder si nécessaire */
+  height: 100%; /* Ajouté pour s'assurer d'utiliser toute la hauteur */
+}
+
+/* V1 */
+/* .svg-container svg {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+} */
+/* V2 */
+.svg-container svg {
+  width: 100%;
+  height: 100%; /* Changé de 'auto' à '100%' */
+  max-height: unset; /* Supprimé la limite de hauteur */
+  object-fit: contain; /* Garantit que tout le contenu est visible */
+}
+
+.controls-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--border-radius-full);
+  background: var(--bg-color);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 4px 4px 8px var(--shadow-dark),
+    -4px -4px 8px var(--shadow-light);
+}

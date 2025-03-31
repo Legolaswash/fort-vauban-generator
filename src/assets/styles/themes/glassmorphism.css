@@ -1,0 +1,81 @@
+/* ----- GLASSMORPHISM ----- */
+.app-container.glassmorphism {
+  --bg-color: rgba(255, 255, 255, 0.25);
+  --shadow-dark: rgba(0, 0, 0, 0.15);
+  --shadow-light: rgba(255, 255, 255, 0.15);
+  --text-color: #ffffff;
+  --primary-color: rgba(72, 219, 251, 0.9);
+  --secondary-color: rgba(255, 159, 67, 0.9);
+  --tertiary-color: rgba(29, 209, 161, 0.9);
+  background: none;
+}
+
+body:has(.app-container.glassmorphism) {
+  background: linear-gradient(135deg, #1a2a6c 0%, #2a6073 50%, #0e7874 100%);
+}
+
+.app-container.glassmorphism .fort-display,
+.app-container.glassmorphism .controls-panel {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.app-container.glassmorphism button,
+.app-container.glassmorphism .slider,
+.app-container.glassmorphism .value-display,
+.app-container.glassmorphism .number-input,
+.app-container.glassmorphism .rotation-input,
+.app-container.glassmorphism .dimension-input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.app-container.glassmorphism .control-item label,
+.app-container.glassmorphism .app-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.app-container.glassmorphism .design-style-select {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.app-container.glassmorphism .design-style-select option {
+  background-color: #4b6cb7;
+  color: white;
+}
+
+.app-container.glassmorphism button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.app-container.glassmorphism .toggle-container span {
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.app-container.glassmorphism .toggle-slider {
+  background: rgba(72, 219, 251, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.app-container.glassmorphism input:checked+.toggle-slider {
+  background: rgba(29, 209, 161, 0.6);
+}
+
+.app-container.glassmorphism input:checked+.toggle-slider:before {
+  transform: translateX(26px);
+  background: rgba(255, 255, 255, 0.95);
+}
