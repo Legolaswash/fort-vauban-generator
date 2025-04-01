@@ -49,48 +49,6 @@ Users can adjust various parameters such as size, shape, and design style to gen
    npm run build
    ```
 
-## File Structure
-```
-📦src
- ┣ 📂assets
- ┃ ┗ 📂styles
- ┃ ┃ ┣ 📂themes
- ┃ ┃ ┃ ┣ 📜brutalism.css
- ┃ ┃ ┃ ┣ 📜flat.css
- ┃ ┃ ┃ ┣ 📜glassmorphism.css
- ┃ ┃ ┃ ┣ 📜material.css
- ┃ ┃ ┃ ┣ 📜minimalism.css
- ┃ ┃ ┃ ┣ 📜neumorphism.css
- ┃ ┃ ┃ ┣ 📜organic.css
- ┃ ┃ ┃ ┣ 📜retro-computing.css
- ┃ ┃ ┃ ┣ 📜skeuomorphism.css
- ┃ ┃ ┃ ┗ 📜steampunk.css
- ┃ ┃ ┣ 📜base.css
- ┃ ┃ ┣ 📜controls.css
- ┃ ┃ ┣ 📜forms.css
- ┃ ┃ ┣ 📜responsive.css
- ┃ ┃ ┗ 📜variables.css
- ┣ 📂components
- ┃ ┣ 📂common
- ┃ ┣ 📂controls
- ┃ ┃ ┣ 📜PresetButtons.jsx
- ┃ ┃ ┣ 📜RotationControls.jsx
- ┃ ┃ ┣ 📜SliderControl.jsx
- ┃ ┃ ┗ 📜ToggleSwitch.jsx
- ┃ ┣ 📜App.jsx
- ┃ ┣ 📜ControlsPanel.jsx
- ┃ ┗ 📜FortDisplay.jsx
- ┣ 📂constants
- ┣ 📂context
- ┣ 📂hooks
- ┃ ┗ 📜useFortGenerator.js
- ┣ 📂utils
- ┃ ┣ 📜polygonUtils.js
- ┃ ┗ 📜presets.js
- ┣ 📜index.css
- ┗ 📜index.js
-```
-
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
 
