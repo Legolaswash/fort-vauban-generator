@@ -1,3 +1,6 @@
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react)](https://reactjs.org/)
+
 # Fort Vauban Generator
 
 ## Description
@@ -5,6 +8,14 @@
 The Fort Vauban Generator is an interactive web application that allows users to create and customize virtual representations of Vauban-style fortifications (military structures designed by Sébastien Le Prestre de Vauban in the 17th century). The application generates dynamic SVG visualizations based on user input.
 
 Users can adjust various parameters such as size, shape, and design style to generate unique fort configurations.
+
+## Technical Design Model
+
+The fort generation is based on geometric principles used in authentic Vauban fortifications. Below is the reference model that guides the mathematical calculations in our generator:
+
+![Vauban Fortification Model](public/fortification3.png "Vauban Star Fort Geometric Model")
+
+*Reference: This geometric model is based on historical fortification principles as described in [La géométrie des fortifications de Vauban](https://blogs.futura-sciences.com/lehning/2019/01/24/la-geometrie-des-fortifications-de-vauban/) (The Geometry of Vauban Fortifications).*
 
 ## Features
 - Interactive controls for adjusting fort parameters (bastions, extensions, colors)
